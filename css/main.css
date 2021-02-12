@@ -1,0 +1,142 @@
+:root{
+    --active-color: white;
+    --secondary-color: lightblue;
+    --tertiary-color: #4c6d73;
+    --green: forestgreen;
+
+    --main-bgcolor:#0A292E;
+    --statuspanel-bgcolor: #1A3438;
+    --footerpanel-bgcolor: #082429;
+}
+
+body, html{
+    background: repeat var(--main-bgcolor);
+    font-size: 18px !important;
+}
+body{
+    min-height: inherit;
+    min-width: 900px;
+}
+
+#statusPanel{
+    background: var(--statuspanel-bgcolor);
+    padding: 0.3em 0em;
+}
+
+#statusPanel .navbar-item{
+    margin: 0 0.5em;
+}
+
+#statusPanel .navbar-item:nth-child(1){
+    color: var(--tertiary-color);
+}
+
+.status-counter > .status-counter-text {
+    color: var(--active-color);
+}
+
+.status-counter > .status-counter-count{
+    color: greenyellow;
+}
+
+.my-btn {
+    border-radius: 0.7em;
+    padding: 0.3em 1.5em;
+}
+
+#header .navbar{
+    padding: 0;
+    min-height: 100px;
+}
+
+#header>:nth-child(n),#welcomePanel>:nth-child(n+2),#promoPanel {
+    margin: 0 90px;
+}
+
+#aLogo {
+    height: 100%;
+    display: block;
+}
+
+#aLogo img{
+    max-height: 100%;
+}
+
+.message-panel{
+    font-size: 1em;
+}
+
+#welcomePanel{
+    //min-height: 400px;
+}
+
+#welcomePanel img{
+    max-width: 100%;
+    max-height:
+    padding: 0;
+}
+#welcomePanel > .message-panel
+{
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.message-panel > .message-icon{
+    height: 3.5em;
+}
+
+.message-panel > .message-caption, .message-panel>.message-caption-big{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--active-color);
+}
+
+.message-panel>.message-caption-big {
+    font-size: 2em;
+}
+
+.message-panel>.message-text, .message-panel-big>.message-text{
+    color: var(--secondary-color);
+    overflow: hidden;
+}
+
+#btnPlay{
+    background: var(--green);
+    //padding: 0.5em 1em;
+}
+
+#btnPlay span:nth-child(1){
+    display: block;
+    color: var(--active-color);
+}
+#btnPlay span:nth-child(2){
+    color: greenyellow;
+    font-size: 0.75em;
+}
+
+#btnPromoWin{
+    color: orange;
+    border: dashed orange;
+}
+
+#btnPromoWin:hover {
+    background: orange;
+    color: var(--active-color);
+    border: solid orange;
+}
+
+#proposionsPanel a{
+    color: #48696E;
+    text-decoration: underline;
+}
+
+#footer .navbar{
+    background: var(--footerpanel-bgcolor) !important;
+}
+
+#copyrightPanel a{
+    color: greenyellow;
+    text-decoration: underline;
+}
